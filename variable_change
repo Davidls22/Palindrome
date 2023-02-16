@@ -1,0 +1,17 @@
+//get the input to check
+let palindrome = prompt("please enter your word here")
+//to access start of word
+let currentIndex = 0
+let stringLength = palindrome.length
+
+while (currentIndex <= stringLength){
+    // checking if first and last word match
+    if (palindrome[currentIndex] !== palindrome[stringLength - 1]){
+        alert(`${palindrome} is not a palindrome`)
+        break;
+    }
+// keeps going along chain of index for each iteration of while loop
+currentIndex++
+alert(`${palindrome} is a palindrome`)
+    break;
+}
